@@ -8,7 +8,7 @@ Here’s how you can approach this:
 
 First, capture the JWT token from the previous request. You can do this using a pm.sendRequest call to get the token and then extract the necessary claims.
 
-See the script [sendRequest.js](../pre-request-scipts/sendRequest.js)
+See the script [sendRequest.js](https://github.com/tayaleelin/api-tools/blob/main/postman/pre-request-scipts/dynamically-add-certificates/sendRequest.js)
 
 ## Step 2: Use the Extracted Information to Determine Which Certificate to Use
 
@@ -19,7 +19,7 @@ Unfortunately, Postman doesn’t support dynamically switching client certificat
 1. Setting Headers Manually: Include a custom header (e.g., x-certificate) that your API gateway or resource server could interpret and map to a certificate.
 2. Using Environment Variables: Prepare different environment variables for different scopes or certificates, and then set the relevant environment variable in your pre-request script based on the extracted scope.
 
-See script: [certificatePerScope.js](../dynamically-add-certificates/certificatePerScope.js)
+See script: [certificatePerScope.js](postman/pre-request-scipts/dynamically-add-certificates/certificatePerScope.js)
 
 ## Step 3: Apply the Certificate to the Request
 
