@@ -1,7 +1,3 @@
-Here is a general README template for your public repository, `api-tools`. You can customize it further based on the specific tools and scripts you add to the repository.
-
----
-
 # API Tools
 
 ![License](https://img.shields.io/github/license/tayaleelin/api-tools)
